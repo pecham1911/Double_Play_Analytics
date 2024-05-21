@@ -10,9 +10,18 @@ In the highly competitive and financially driven landscape of professional baseb
 Data Understanding and Analysis
 
 Description of data
+- https://www.retrosheet.org/, Game logs
+- 2010 through 2023
+
+
 Data shape
+- Initial total rows = 32484
+- 178 columsn/features
+
 Data manipulation
+
 Data limitations
+- 2020 partial year due to COVID
 
 Data statistics and interpretation
 This project contains:
