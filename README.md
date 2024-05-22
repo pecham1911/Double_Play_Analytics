@@ -10,11 +10,11 @@ This project analyzes the factors associated with forecasting baseball game outc
 In the highly competitive and financially driven landscape of professional baseball, accurately predicting game outcomes can significantly impact team performance, fan engagement, and revenue generation. By leveraging historical game data our predictive modeling approach aims to provide teams, broadcasters, and stakeholders with actionable insights into future game outcomes. This predictive analytics tool will empower teams to optimize their strategies, such as player selection, pitching rotations, and in-game tactics, leading to improved win rates and overall performance. Additionally, broadcasters can enhance viewer experience by offering more informed pre-game analysis and real-time predictions during broadcasts. Ultimately, a reliable predictive model for baseball game outcomes has the potential to drive fan excitement, increase ticket sales, and attract valuable sponsorships, thus contributing to the long-term success and profitability of baseball organizations.
 
 #### Data understanding and analysis
-The dataset was taken from https://www.retrosheet.org/. They came from the Game logs datset for 2010 through 2023.
+The dataset was taken from https://www.retrosheet.org/. They came from the Game logs datset for 2010 through 2023. The data dictionary can be found on the webpage and in the supplemental materials of this repository.
 
 #### Description of data
 ##### Data shape
-After concatenating the thirteen years of data there were 32,484 games (rows of data) and 178 columns/features. 
+After concatenating the thirteen years of data there were 32,484 games (rows of data) and 179 columns/features. 
 
 ##### Data manipulation
 
