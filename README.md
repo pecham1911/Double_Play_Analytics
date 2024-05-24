@@ -27,23 +27,22 @@ This analysis spanned the COVID-19 pandemic. The pandemic introduced unique chal
 Baseball has one of the richest data caches in sports, offering a plethora of statistics and metrics for analysis. Nonetheless, navigating this vast sea of information poses challenges, demanding a focused approach, organization, and an understanding of big data modeling techniques to extract meaningful insights from the wealth of available data.
 
 ##### Data modeling, evaluation, and interpretation
-Data were split into a training set and test set for modeling. Games were paired so that features for the winning team and losing team of a game were not split between the training and test set to prevent data leakage. Features were standard scale standardized. No additional preprocessing was used. There are no categorical features, no missing data, and the target was 50:50 balanced. 
+Data are split into a training set and test set for modeling. Games are paired so that features for the winning team and losing team of a game are not split between the training and test set to prevent data leakage. Features are standard scale standardized. No additional preprocessing is used. There are no categorical features, no missing data, and the target is 50:50 balanced. 
 
-The primary evaluation metric used for these models was accuracy. With a balanced dataset and equal interest in classification of wins as much as losses, accuracy is an appropriate evaluation metric.
+The primary evaluation metric used for these models is accuracy. With a balanced dataset and equal interest in classification of wins as much as losses, accuracy is an appropriate evaluation metric.
 
-- The first model was a Dummy Classifier. As expected using the most frequent strategy the accuracy score of this balanced data set was 50%. 
-- The second model was a simple Decision Tree using criterion of gini, a maximum depth of 4, and the full set of X features listed above. The accuracy score for this model was 71%. The model identified: hits, at_bats, home_run, intent_walk, pitchers_used, sacrifice_fly, and grounded_into_double_plays as the most important features.
-- Random Forest Classifier HERE
-- The first Logistic Regression model used the full set of X features listed above. The accuracy score for this model was 80%.
-- The second Logistic Regression model used the subset of X features identified as the most important features: hits, at_bats, home_run, intent_walk, pitchers_used, sacrifice_fly, and grounded_into_double_plays. The accuracy score for this model was 76%.
-- The last model was a Neural Network. This model was built using extensive support from ChatGPT. The full set of X features listed above were used in the model. The accuracy score for this model was 83%; the best performing model. The five most important feature identified in order of importance were: at_bats, hits, left_on_base, walk, and pitchers_used.
+- The first model is a Dummy Classifier. As expected using the most frequent strategy the accuracy score of this balanced data set is 50%. 
+- The second model is a simple Decision Tree Classifier using parameters for criterion, maximum depth, and the full set of X features listed above. The accuracy score for this model is 71%. The model identifies: hits, at_bats, home_run, intent_walk, pitchers_used, sacrifice_fly, and grounded_into_double_plays as the most important features.
+- Next a Random Forest Classifier uses a grid search for the estimator, and maxium depth and features. The best parameters are used in the model with the full set of X features listed above. The accuracy score for this model is 78%. The model identifies: hits, at_bats, home_run, intent_walk, walk, double, and errors as the seven most important features.
+- The first Logistic Regression model uses the full set of X features listed above. The accuracy score for this model is 80%.
+- The second Logistic Regression model uses the subset of X features identified as the most important features from the Random Forest: hits, at_bats, home_run, intent_walk, walk, double, and errors. The accuracy score for this model is 76%.
+- The last model is a Neural Network. This model is built using extensive support from ChatGPT. The full set of X features listed above are used in the model. The accuracy score for this model is 83%; the best performing model. The seven most important feature identified in order of importance are: at_bats, hits, left_on_base, walk, pitchers_used, grounded_into_double_plays, and intent_walk.
   
 
-- Add coefficient interpretation,
-- Random Forest Classifier interpretation
+- Add probabilities and/or coefficient interpretation
+- Interpretation/recommendation
+- Add visualizations
 
-Visualizations
 
-Resources
-PRESENTATION: 
-TABLEAU: 
+
+ 
