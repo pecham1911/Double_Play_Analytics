@@ -37,14 +37,19 @@ The primary evaluation metric used for these models is accuracy. With a balanced
 - The first Logistic Regression model uses the full set of X features listed above. The accuracy score for this model is 78%.
 - The second Logistic Regression model uses the subset of X features identified as the most important features from the Random Forest: hits, at_bats, home_run, intent_walk, walk, double, and errors. The accuracy score for this model is 76%.
 - The last model is a Neural Network. This model is built using extensive support from ChatGPT. The full set of X features listed above are used in the model. The accuracy score for this model is 82%; the best performing model. The seven most important feature identified in order of importance are: at_bats, left_on_base, walk, obp, pitchers_used, hits, and home_run.
+
+#### Findings and Recommendations
+While pitching and defense are crucial for well-rounded teams, the most important factors identified by this analysis when scouting is offense. Players who can get on base, especially those with a keen eye for spotting balls over strikes and earning walks, create more opportunities for additional at-bats.
+
   
 #### Visualizations
-
-##### 
-- Add probabilities and/or coefficient interpretation
-- Interpretation/recommendation
-- Add visualizations
+![Average At Bats](https://github.com/pecham1911/Double_Play_Analytics/assets/159095917/47a570f3-4ee3-46d6-a775-c606cef784ff)
 
 
+![Average Left On Base](https://github.com/pecham1911/Double_Play_Analytics/assets/159095917/e6435432-f975-41fe-a244-e83139ca89c9)
 
- 
+
+![Average Walks](https://github.com/pecham1911/Double_Play_Analytics/assets/159095917/26a08881-13b1-4357-b29a-d13467628444)
+
+
+![Strikeout_Yr](https://github.com/pecham1911/Double_Play_Analytics/assets/159095917/1d634591-97f6-491b-967e-0addc69d447d)
