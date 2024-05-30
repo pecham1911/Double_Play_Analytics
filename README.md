@@ -43,6 +43,9 @@ While pitching and defense are crucial for well-rounded teams, the most importan
 
   
 #### Visualizations
+
+https://public.tableau.com/app/profile/monica.pecha/viz/Baseball_Foundations/Strikeout_Yr?publish=yes
+
 ![Average At Bats](https://github.com/pecham1911/Double_Play_Analytics/assets/159095917/47a570f3-4ee3-46d6-a775-c606cef784ff)
 
 
